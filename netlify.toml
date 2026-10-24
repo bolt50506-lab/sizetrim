@@ -1,0 +1,4 @@
+[build]
+  publish = "."
+  # No build command needed: the site is already built.
+  # To rebuild on Netlify instead, use:  command = "python3 build.py"

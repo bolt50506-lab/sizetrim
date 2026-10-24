@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compress Image to 30KB – Free Online Image Reducer</title><meta name="description" content="Reduce any JPG, PNG or WebP photo to under 30KB for free. Private, runs in your browser."><link rel="canonical" href="https://sizetrim.co.uk/compress-image-to-30kb.html">
+<style>:root{--bg:#f4f6fb;--hero:#e4ecff;--card:#fff;--head:rgba(255,255,255,.88);--text:#0f172a;--muted:#546074;--accent:#2563eb;--accent2:#7c3aed;--at:#fff;--line:#e0e5ef;--ok:#15803d;--bad:#b91c1c;--tint:#f1f5ff;--sh:0 8px 30px rgba(30,50,110,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0f19;--hero:#14204a;--card:#131a29;--head:rgba(11,15,25,.88);--text:#eef2fa;--muted:#9aa6bb;--accent:#6c97ff;--accent2:#a78bfa;--at:#08101f;--line:#25304a;--ok:#4ade80;--bad:#f87171;--tint:#192238;--sh:0 8px 30px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;color:var(--text);background:linear-gradient(180deg,var(--hero) 0,var(--bg) 420px) no-repeat,var(--bg);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;padding-bottom:env(safe-area-inset-bottom,0)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+header{position:sticky;top:0;z-index:20;background:var(--head);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;color:var(--text);text-decoration:none;letter-spacing:-.01em}
+.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:.8rem;font-weight:800}
+nav{display:flex;gap:4px}
+nav a{padding:9px 14px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{background:var(--tint);color:var(--text)}
+main{flex:1;padding-top:clamp(28px,6vw,60px);padding-bottom:64px}
+main>*{max-width:760px;margin-left:auto;margin-right:auto}
+main>.tools{max-width:none}
+main>h1{text-align:center;font-size:clamp(1.85rem,5.2vw,3rem);line-height:1.15;letter-spacing:-.025em;margin-top:0;margin-bottom:12px;max-width:820px}
+main>.sub{text-align:center;color:var(--muted);font-size:clamp(1rem,2.4vw,1.2rem);max-width:640px;margin-top:0;margin-bottom:16px}
+.badges{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;list-style:none;padding:0;margin:0 auto 28px;color:var(--muted);font-size:.92rem;font-weight:600}
+.badges li::before{content:"✓ ";color:var(--ok);font-weight:800}
+h2{font-size:1.35rem;line-height:1.3;margin:36px auto 10px;letter-spacing:-.01em}
+h3{font-size:1.02rem;margin:16px auto 4px}
+main p,main li{font-size:1.04rem}
+.faq p,.note,small{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(16px,3vw,26px);margin-top:16px;margin-bottom:16px;box-shadow:var(--sh)}
+.card h2{margin-top:0}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;margin-bottom:12px}
+.tools>.card{margin:0;max-width:none}
+@media (max-width:860px){.tools{grid-template-columns:1fr}}
+.drop{border:2px dashed var(--line);background:var(--tint);border-radius:14px;padding:34px 16px;text-align:center;cursor:pointer;color:var(--muted);transition:.15s}
+.drop:hover,.drop.over{border-color:var(--accent);background:var(--card)}
+.drop .ico{display:grid;place-items:center;width:52px;height:52px;margin:0 auto 10px;border-radius:50%;background:var(--accent);color:var(--at);font-size:1.4rem;font-weight:700}
+.drop strong{display:block;color:var(--text);font-size:1.08rem}
+label{display:block;font-weight:700;margin:18px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:42px;border:1px solid var(--line);background:var(--card);color:var(--text);padding:8px 16px;border-radius:999px;cursor:pointer;font-size:.95rem;font-weight:600}
+.chip:hover{border-color:var(--accent)}
+.chip.on{background:var(--accent);color:var(--at);border-color:var(--accent)}
+.row{display:flex;gap:10px;align-items:center;margin-top:12px;color:var(--muted)}
+input[type=number]{width:120px;min-height:44px;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-size:1rem}
+.main{width:100%;min-height:52px;margin-top:18px;padding:13px;border:0;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:1.08rem;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(37,99,235,.28)}
+.main:hover:not(:disabled){filter:brightness(1.07)}
+.main:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+.msg{margin-top:12px;font-weight:600;word-break:break-word}.ok{color:var(--ok)}.bad{color:var(--bad)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+@media (max-width:480px){.cmp{grid-template-columns:1fr}}
+.cmp img{width:100%;max-height:220px;object-fit:contain;background:var(--tint);border:1px solid var(--line);border-radius:10px}
+.dl{display:block;text-align:center;margin-top:14px;padding:14px;border-radius:12px;background:var(--ok);color:#fff;font-weight:700;text-decoration:none;min-height:48px}
+.hidden{display:none}
+.links{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.links a{display:inline-block;padding:8px 14px;border:1px solid var(--line);background:var(--card);border-radius:999px;color:var(--text);text-decoration:none;font-size:.92rem;font-weight:500}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+.ad{margin:18px auto;text-align:center}
+footer{background:var(--card);border-top:1px solid var(--line);padding:28px 0 32px;color:var(--muted);font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center}
+footer a{color:var(--muted);text-decoration:none;font-weight:600}footer a:hover{color:var(--accent)}
+footer p{flex-basis:100%;margin:6px 0 0}
+@media (max-width:560px){nav a{padding:8px 10px}.logo{font-size:1.1rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.topbar{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;text-align:center;font-size:.9rem;font-weight:600;padding:8px 16px;padding-top:calc(8px + env(safe-area-inset-top,0))}
+.topbar a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:800}
+.brand{padding:0 0 40px}
+.brandcard{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-radius:20px;padding:clamp(20px,4vw,32px);box-shadow:var(--sh)}
+.brandcard strong{display:block;font-size:clamp(1.15rem,3vw,1.5rem);line-height:1.3}
+.brandcard span{opacity:.9}
+.brandcard .btn{display:inline-block;background:#fff;color:#1e3a8a;padding:12px 22px;border-radius:12px;font-weight:800;text-decoration:none;min-height:46px}
+.brandcard .btn:hover{filter:brightness(.95)}
+header{padding-top:0}
+@media (max-width:560px){.brandcard .btn{width:100%;text-align:center}}
+</style></head><body>
+<div class="topbar">A project by <a href="https://companyflow.co.uk" target="_blank" rel="noopener">CompanyFlow</a></div><header><div class="wrap"><a class="logo" href="./index.html"><span class="mark">KB</span>SizeTrim</a><nav><a href="./index.html">Image</a><a href="compress-pdf-to-200kb.html">PDF</a><a href="guides.html">Guides</a></nav></div></header>
+<main class="wrap"><h1>Compress Image to 30KB</h1><p class="sub">Need your photo under 30KB for an upload form? Choose your image below and the tool shrinks it to just under 30KB while keeping it as sharp as the limit allows.</p><ul class="badges"><li>Free</li><li>100% private</li><li>No sign-up</li></ul><div class="card"><div class="tool" data-mode="image" data-target="30"></div></div><h2>How to use</h2><ol><li>Select your image (JPG, PNG or WebP).</li><li>Keep 30KB selected as the target, or type your own size.</li><li>Press Compress, check the preview, then download the result.</li></ol><h2>About 30KB</h2><p>30KB fits many resume and application photos. Face photos on a plain background reach this size with little visible loss.</p><p>For scale, 30KB is about 0.03MB. A typical 3MB phone photo has to shrink roughly 102 times to fit, so expect lower resolution and some softness. Cropping first keeps more detail.</p><h2>Tips for best results</h2><p>Portals that ask for 30KB usually also want a JPG file. This tool outputs JPG. If the result looks too soft, upload a higher-resolution original, because tiny or already-compressed images have little left to give.</p><h2>Frequently asked questions</h2><div class='faq'><h3>Is it free?</h3><p>Yes, completely free with no sign-up.</p><h3>Are my files uploaded anywhere?</h3><p>No. Compression happens inside your browser and your file never leaves your device.</p><h3>Why is my result slightly under the target?</h3><p>The tool finds the highest quality that still fits under the limit you chose.</p></div><h2>Compress image to a size</h2><ul class='links'><li><a href="compress-image-to-10kb.html">10KB</a></li><li><a href="compress-image-to-15kb.html">15KB</a></li><li><a href="compress-image-to-20kb.html">20KB</a></li><li><a href="compress-image-to-25kb.html">25KB</a></li><li><a href="compress-image-to-40kb.html">40KB</a></li><li><a href="compress-image-to-50kb.html">50KB</a></li><li><a href="compress-image-to-70kb.html">70KB</a></li><li><a href="compress-image-to-100kb.html">100KB</a></li><li><a href="compress-image-to-150kb.html">150KB</a></li><li><a href="compress-image-to-200kb.html">200KB</a></li><li><a href="compress-image-to-300kb.html">300KB</a></li><li><a href="compress-image-to-500kb.html">500KB</a></li></ul><h2>For forms and applications</h2><ul class='links'><li><a href="signature-image-under-20kb.html">Compress Signature Image to 20KB</a></li><li><a href="passport-photo-under-50kb.html">Reduce Passport Size Photo to 50KB</a></li><li><a href="resume-photo-under-30kb.html">Resize Resume and Profile Photo to 30KB</a></li><li><a href="photo-for-online-form-under-100kb.html">Reduce Photo for Online Form to 100KB</a></li><li><a href="id-card-image-under-200kb.html">Compress ID Card Image to 200KB</a></li><li><a href="document-scan-under-500kb.html">Compress Document Scan Image to 500KB</a></li></ul><h2>Compress PDF</h2><ul class='links'><li><a href="compress-pdf-to-100kb.html">PDF 100KB</a></li><li><a href="compress-pdf-to-200kb.html">PDF 200KB</a></li><li><a href="compress-pdf-to-300kb.html">PDF 300KB</a></li><li><a href="compress-pdf-to-500kb.html">PDF 500KB</a></li><li><a href="compress-pdf-to-1mb.html">PDF 1MB</a></li><li><a href="compress-pdf-to-2mb.html">PDF 2MB</a></li></ul><h2>Guides</h2><ul class='links'><li><a href="guides/how-to-reduce-photo-size-for-online-form.html">How to Reduce Photo Size for an Online Form (Step by Step)</a></li><li><a href="guides/how-to-compress-signature-for-job-application.html">How to Compress a Signature Image to 20KB for Job Applications</a></li><li><a href="guides/passport-photo-size-requirements-for-online-forms.html">Passport Size Photo for Online Forms: What to Check Before Uploading</a></li><li><a href="guides/jpg-vs-png-which-file-is-smaller.html">JPG vs PNG: Which File Format Is Smaller?</a></li><li><a href="guides/how-to-compress-pdf-for-email.html">How to Compress a PDF to Send by Email</a></li><li><a href="guides/why-is-my-photo-blurry-after-compressing.html">Why Is My Photo Blurry After Compressing? How to Fix It</a></li><li><a href="guides/how-to-scan-a-document-with-your-phone-small-file.html">How to Scan a Document With Your Phone and Keep the File Small</a></li><li><a href="guides/what-is-a-kb-and-mb-file-size-explained.html">KB vs MB: File Sizes Explained Simply</a></li></ul></main>
+<section class="brand"><div class="wrap"><div class="brandcard"><div><strong>SizeTrim is a project by CompanyFlow</strong><span>Visit our website to see more from CompanyFlow.</span></div><a class="btn" href="https://companyflow.co.uk" target="_blank" rel="noopener">Visit companyflow.co.uk →</a></div></div></section><footer><div class="wrap"><a href="guides.html">Guides</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a><p>© 2026 SizeTrim. All processing happens in your browser.</p><p>A project by <a href="https://companyflow.co.uk" rel="noopener">companyflow.co.uk</a></p></div></footer>
+<script>(function(){
+function kb(n){return n>=1048576?(n/1048576).toFixed(2)+' MB':(n/1024).toFixed(1)+' KB';}
+function lab(n){return n>=1024?(n/1024)+' MB':n+' KB';}
+function loadScript(src){return new Promise(function(res,rej){var s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s);});}
+function tick(){return new Promise(function(r){setTimeout(r,20);});}
+async function libs(){
+ if(!window.pdfjsLib){await loadScript('https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js');pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';}
+ if(!window.jspdf){await loadScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js');}
+}
+function canvasBlob(c,q){return new Promise(function(r){c.toBlob(r,'image/jpeg',q);});}
+function scaled(src,sw,sh,sc){var c=document.createElement('canvas');c.width=Math.max(1,Math.round(sw*sc));c.height=Math.max(1,Math.round(sh*sc));var x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);x.drawImage(src,0,0,c.width,c.height);return c;}
+
+async function compressImage(img,limit){
+ var scale=1;
+ while(scale>0.05){
+  var c=scaled(img,img.width,img.height,scale),lo=.05,hi=.95,best=null;
+  for(var i=0;i<8;i++){var m=(lo+hi)/2,b=await canvasBlob(c,m);if(b.size<=limit){best=b;lo=m;}else hi=m;}
+  if(best)return{blob:best,scale:scale,w:c.width,h:c.height};
+  scale*=.85;
+ }
+ return null;
+}
+
+async function compressPdf(file,limit,say){
+ await libs();
+ var pdf=await pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise;
+ if(pdf.numPages>40)throw new Error('Please use a PDF with 40 pages or fewer.');
+ var pages=[];
+ for(var i=1;i<=pdf.numPages;i++){
+  say('Reading page '+i+' of '+pdf.numPages+'…');await tick();
+  var p=await pdf.getPage(i),vp=p.getViewport({scale:1.5}),c=document.createElement('canvas');
+  c.width=vp.width;c.height=vp.height;var x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);
+  await p.render({canvasContext:x,viewport:vp}).promise;
+  pages.push({c:c,w:vp.width/1.5,h:vp.height/1.5});
+ }
+ function build(sc,q){
+  var doc;
+  pages.forEach(function(p,i){
+   var o=p.w>p.h?'l':'p',t=scaled(p.c,p.c.width,p.c.height,sc),d=t.toDataURL('image/jpeg',q);
+   if(i===0)doc=new jspdf.jsPDF({unit:'pt',format:[p.w,p.h],orientation:o});else doc.addPage([p.w,p.h],o);
+   doc.addImage(d,'JPEG',0,0,p.w,p.h);
+  });
+  return doc.output('blob');
+ }
+ var scales=[1,.8,.65,.5,.4,.3,.22];
+ for(var k=0;k<scales.length;k++){
+  say('Optimizing (pass '+(k+1)+' of '+scales.length+')…');await tick();
+  if(build(scales[k],.2).size>limit)continue;
+  var lo=.2,hi=.9,best=null;
+  for(var j=0;j<6;j++){var m=(lo+hi)/2,b=build(scales[k],m);if(b.size<=limit){best=b;lo=m;}else hi=m;await tick();}
+  return{blob:best||build(scales[k],.2),pages:pages.length};
+ }
+ return null;
+}
+
+function init(root){
+ var mode=root.dataset.mode,target=+root.dataset.target,pdf=mode==='pdf',file=null,img=null,url=null;
+ var presets=pdf?[100,200,500,1024,2048]:[20,50,100,200,500];
+ if(presets.indexOf(target)<0){presets.push(target);presets.sort(function(a,b){return a-b;});}
+ root.innerHTML='<div class="drop"><div class="ico">↑</div><strong>Tap to choose '+(pdf?'a PDF':'an image')+'</strong>or drag and drop here</div><input type="file" hidden accept="'+(pdf?'application/pdf':'image/*')+'"><label>Target size</label><div class="chips"></div><div class="row"><span>Custom</span><input type="number" min="5" placeholder="KB"><span>KB</span></div><button class="main" disabled>Compress '+(pdf?'PDF':'image')+'</button><div class="msg"></div><div class="res hidden"></div>';
+ var $=function(s){return root.querySelector(s);},msg=$('.msg'),go=$('.main'),cu=$('input[type=number]'),drop=$('.drop'),fi=$('input[type=file]');
+ function chips(){var h=$('.chips');h.innerHTML='';presets.forEach(function(t){var b=document.createElement('button');b.className='chip'+(t===target&&!cu.value?' on':'');b.textContent=lab(t);b.onclick=function(){target=t;cu.value='';chips();};h.appendChild(b);});}
+ chips();
+ cu.oninput=function(){var v=parseInt(cu.value,10);if(v>0)target=v;chips();};
+ drop.onclick=function(){fi.click();};
+ drop.ondragover=function(e){e.preventDefault();drop.classList.add('over');};
+ drop.ondragleave=function(){drop.classList.remove('over');};
+ drop.ondrop=function(e){e.preventDefault();drop.classList.remove('over');if(e.dataTransfer.files[0])pick(e.dataTransfer.files[0]);};
+ fi.onchange=function(){if(fi.files[0])pick(fi.files[0]);};
+ function say(t,c){msg.className='msg '+(c||'');msg.textContent=t;}
+ function pick(f){
+  if(pdf?f.type!=='application/pdf':!f.type.startsWith('image/')){say('Please choose a '+(pdf?'PDF':'image')+' file.','bad');return;}
+  file=f;
+  if(pdf){go.disabled=false;say('Loaded: '+f.name+' ('+kb(f.size)+')');return;}
+  var im=new Image();im.onload=function(){img=im;go.disabled=false;say('Loaded: '+f.name+' ('+kb(f.size)+', '+im.width+'×'+im.height+')');};
+  im.onerror=function(){say('Could not read this image.','bad');};im.src=URL.createObjectURL(f);
+ }
+ go.onclick=async function(){
+  var limit=target*1024;go.disabled=true;say('Compressing…');await tick();
+  try{
+   var out=pdf?await compressPdf(file,limit,say):await compressImage(img,limit);
+   if(!out){say('Could not reach that size. Try a larger target.','bad');go.disabled=false;return;}
+   if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(out.blob);
+   var ext=pdf?'pdf':'jpg',name=file.name.replace(/\.[^.]+$/,'')+'-'+target+'kb.'+ext,r=$('.res');
+   var note=pdf?'<p class="note">Pages are saved as compressed images, so text in the output PDF is not selectable. Best for forms and uploads.</p>':'';
+   r.innerHTML=(pdf?'':'<div class="cmp"><div><img src="'+img.src+'" alt="Original"><small>Original: '+kb(file.size)+' · '+img.width+'×'+img.height+'</small></div><div><img src="'+url+'" alt="Compressed"><small>Compressed: '+kb(out.blob.size)+' · '+out.w+'×'+out.h+'</small></div></div>')+(pdf?'<p><b>Original:</b> '+kb(file.size)+' → <b>Compressed:</b> '+kb(out.blob.size)+'</p>':'')+note+'<a class="dl" href="'+url+'" download="'+name+'">Download compressed '+(pdf?'PDF':'image')+'</a>';
+   r.classList.remove('hidden');say('Done: '+kb(out.blob.size)+' (target '+lab(target)+')','ok');
+  }catch(e){say(e.message||'Something went wrong.','bad');}
+  go.disabled=false;
+ };
+}
+document.querySelectorAll('.tool').forEach(init);
+})();
+</script></body></html>
